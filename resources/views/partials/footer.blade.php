@@ -1,33 +1,41 @@
 <footer>
     <section>
         <div>
-            <h2>dc comics</h2>
             <ul>
-                <li  >
-                    <a href=""></a>
+                <li><h2>dc comics</h2></li>
+                @foreach ($dcComicsLinks as $dcLink)
+                <li>
+                    <a href="">{{$dcLink}}</a>
                 </li>
+                @endforeach
             </ul>
-            <h2>shop</h2>
             <ul>
-                <li  >
-                    <a href=""></a>
+                <li><h2>shop</h2></li>
+                @foreach ($shopLinks as $shopLink)
+                <li>
+                    <a href="">{{$shopLink}}</a>
                 </li>
-            </ul>
-        </div>
-        <div>
-            <h2>dc</h2>
-            <ul>
-                <li  >
-                    <a href=""></a>
-                </li>
+                @endforeach
             </ul>
         </div>
         <div>
-            <h2>sites</h2>
             <ul>
-                <li  >
-                    <a href=""></a>
+                <li><h2>dc</h2></li>
+                @foreach ($dcLinks as $dcLink)
+                <li>
+                    <a href="">{{$dcLink}}</a>
                 </li>
+                @endforeach
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><h2>sites</h2></li>
+                @foreach ($sitesLinks as $siteLink)
+                <li>
+                    <a href="">{{$siteLink}}</a>
+                </li>
+                @endforeach
             </ul>
         </div>
         <div class="dc-logo">
