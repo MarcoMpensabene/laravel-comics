@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+$data = require resource_path('data/comics.php');
+
+Route::get('/', function () use ($data) {
     $merchList = [
         [
             'src' => '../resources/img/buy-comics-digital-comics.png',
@@ -47,5 +49,6 @@ Route::get('/', function () {
     $sitesLinks =
         ["MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"];
 
-    return view('pages.home', compact("merchList", "listLink", "dcComicsLinks", "shopLinks", "dcLinks", "sitesLinks"));
+
+    return view('pages.home', compact("merchList", "listLink", "dcComicsLinks", "shopLinks", "dcLinks", "sitesLinks", "data"));
 });

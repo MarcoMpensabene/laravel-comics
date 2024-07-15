@@ -53,19 +53,19 @@
                     <h2 id="follow">Follow Us</h2>
                 </li>
                 <li>
-                    <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="facebook">
                 </li>
                 <li>
-                    <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="twitter">
                 </li>
                 <li>
-                    <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="youtube">
                 </li>
                 <li>
-                    <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="pinterest">
                 </li>
                 <li>
-                    <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="periscope">
                 </li>
             </ul>
         </div>

@@ -104,7 +104,7 @@ footer {
         display: flex;
 
         li {
-
+            margin-right: 1rem;
             align-self: center;
         }
     }
@@ -148,6 +148,62 @@ section.merch-section {
             p {
                 align-self: center;
                 color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+main {
+
+    width: 100%;
+
+    section.jumbo-tron {
+        background-image: url("../img/jumbotron.jpg");
+        height: 400px;
+        margin-bottom: 2rem;
+    }
+
+    div {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        button {
+            margin: 0 auto;
+            display: block;
+            padding: .5rem 2rem .5rem;
+            background-color: #0282f9;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+    }
+
+    section.articles-list {
+        color: white;
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        article {
+            width: calc((100% / 6) - 2rem);
+            margin-right: 2rem;
+            margin-bottom: .5rem;
+
+            img {
+                width: 100%;
+                height: 80%;
+                margin-bottom: .5rem;
+            }
+
+            h4 {
+                font-size: smaller;
                 text-transform: uppercase;
             }
         }

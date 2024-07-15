@@ -6,7 +6,30 @@
 @section('main-content')
 
     <main>
-         <h1>Content goes here !</h1>
+        <main>
+            <section class="jumbo-tron">
+            </section>
+
+            <section class="articles-list">
+                <div>
+                    @foreach ($data as $comic)
+                    <article >
+                        <img src="{{$comic["thumb"]}}" alt="">
+                        <h4>
+                            {{$comic["series"]}}
+                        </h4>
+                        <h5>
+                            {{$comic["price"]}}
+                        </h6>
+                    </article>
+                    @endforeach
+
+                </div>
+            </section>
+            <div>
+                <button>Load More</button>
+            </div>
+        </main>
 
         <section class="merch-section">
             @foreach ($merchList as $item)
