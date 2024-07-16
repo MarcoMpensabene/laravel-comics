@@ -13,8 +13,8 @@
             <section class="articles-list">
                 <div>
                     @foreach ($data as $comic)
-                    <article >
-                        <img src="{{$comic["thumb"]}}" alt="">
+                    <article>
+                        <img src="{{$comic["thumb"]}}" alt="" class="{{Route::currentRouteName() === "guest.comics" ? "active" : " "}}">
                         <h4>
                             {{$comic["series"]}}
                         </h4>

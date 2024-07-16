@@ -184,6 +184,7 @@ main {
         }
     }
 
+
     section.articles-list {
         color: white;
 
@@ -204,6 +205,10 @@ main {
                 width: 100%;
                 height: 80%;
                 margin-bottom: .5rem;
+            }
+
+            img.active {
+                border: 1px solid royalblue;
             }
 
             h4 {

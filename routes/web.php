@@ -91,7 +91,7 @@ Route::get('/', function () {
 
 
     return view('pages.home', compact("merchList", "listLink", "dcComicsLinks", "shopLinks", "dcLinks", "sitesLinks"));
-});
+})->name('guest.home');
 
 Route::get('/comics', function () use ($data) {
     $listLink = [
@@ -148,4 +148,4 @@ Route::get('/comics', function () use ($data) {
 
 
     return view('pages.comics', compact("listLink", "dcComicsLinks", "shopLinks", "dcLinks", "sitesLinks", "data"));
-});
+})->name('guest.comics');
