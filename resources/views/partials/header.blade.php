@@ -7,7 +7,7 @@
         <ul>
             @foreach ($listLink as $link)
                 <li>
-                    <a href="#">{{$link}}</a>
+                    <a href="{{$link["route"]}}">{{$link["name"]}}</a>
                 </li>
             @endforeach
 

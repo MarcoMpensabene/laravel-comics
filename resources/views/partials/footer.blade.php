@@ -5,7 +5,7 @@
                 <li><h2>dc comics</h2></li>
                 @foreach ($dcComicsLinks as $dcLink)
                 <li>
-                    <a href="">{{$dcLink}}</a>
+                    <a href="#">{{$dcLink}}</a>
                 </li>
                 @endforeach
             </ul>
@@ -13,7 +13,7 @@
                 <li><h2>shop</h2></li>
                 @foreach ($shopLinks as $shopLink)
                 <li>
-                    <a href="">{{$shopLink}}</a>
+                    <a href="#">{{$shopLink}}</a>
                 </li>
                 @endforeach
             </ul>
@@ -23,7 +23,7 @@
                 <li><h2>dc</h2></li>
                 @foreach ($dcLinks as $dcLink)
                 <li>
-                    <a href="">{{$dcLink}}</a>
+                    <a href="#">{{$dcLink}}</a>
                 </li>
                 @endforeach
             </ul>
@@ -33,7 +33,7 @@
                 <li><h2>sites</h2></li>
                 @foreach ($sitesLinks as $siteLink)
                 <li>
-                    <a href="">{{$siteLink}}</a>
+                    <a href="#">{{$siteLink}}</a>
                 </li>
                 @endforeach
             </ul>
