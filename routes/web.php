@@ -94,28 +94,6 @@ Route::get('/', function () {
 });
 
 Route::get('/comics', function () use ($data) {
-    $merchList = [
-        [
-            'src' => '../resources/img/buy-comics-digital-comics.png',
-            'content' => 'Digital Comics',
-        ],
-        [
-            'src' => '../resources/img/buy-comics-merchandise.png',
-            'content' => 'DC Merchandise',
-        ],
-        [
-            'src' => '../resources/img/buy-comics-subscriptions.png',
-            'content' => 'Subscriptions',
-        ],
-        [
-            'src' => '../resources/img/buy-comics-shop-locator.png',
-            'content' => 'Comic Shop Locator',
-        ],
-        [
-            'src' => '../resources/img/buy-dc-power-visa.svg',
-            'content' => 'DC power Visa',
-        ],
-    ];
     $listLink = [
         'character' => [
             'name' => 'home',
@@ -169,5 +147,5 @@ Route::get('/comics', function () use ($data) {
 
 
 
-    return view('pages.comics', compact("merchList", "listLink", "dcComicsLinks", "shopLinks", "dcLinks", "sitesLinks", "data"));
+    return view('pages.comics', compact("listLink", "dcComicsLinks", "shopLinks", "dcLinks", "sitesLinks", "data"));
 });

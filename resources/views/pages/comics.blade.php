@@ -31,15 +31,6 @@
             </div>
         </main>
 
-        <section class="merch-section">
-            @foreach ($merchList as $item)
-                <div class="merch">
-                    <div>
-                        <img src="{{Vite::asset($item["src"])}}" alt="{{$item["content"]}}">
-                        <p>{{$item["content"]}}</p>
-                    </div>
-                </div>
-            @endforeach
 
         </section>
     </main>
