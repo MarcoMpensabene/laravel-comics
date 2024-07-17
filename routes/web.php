@@ -97,11 +97,11 @@ Route::get('/comics', function () use ($data) {
     $listLink = [
         'character' => [
             'name' => 'home',
-            'route' => '/'
+            'route' => route("guest.home")
         ],
         'comics' => [
             'name' => 'comics',
-            'route' => '/comics'
+            'route' => route("guest.comics")
         ],
         'movies' => [
             'name' => 'movies',
